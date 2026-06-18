@@ -1,0 +1,842 @@
+{
+  "users": [
+    {
+      "id": "usr_5",
+      "name": "Thejaswin P S",
+      "email": "thejaswinps@gmail.com",
+      "password_hash": "ef92b778bafe771e8929ab57e5377873737ec59ff6d8d5fb9f668c7e2b347632",
+      "role": "super_admin"
+    },
+    {
+      "id": "usr_1",
+      "name": "Sarah Jenkins",
+      "email": "superadmin@thescene.co",
+      "password_hash": "ef92b778bafe771e8929ab57e5377873737ec59ff6d8d5fb9f668c7e2b347632",
+      "role": "super_admin"
+    },
+    {
+      "id": "usr_2",
+      "name": "Alex Rivera",
+      "email": "admin@thescene.co",
+      "password_hash": "ef92b778bafe771e8929ab57e5377873737ec59ff6d8d5fb9f668c7e2b347632",
+      "role": "admin"
+    },
+    {
+      "id": "usr_3",
+      "name": "Emily Chen",
+      "email": "manager@thescene.co",
+      "password_hash": "ef92b778bafe771e8929ab57e5377873737ec59ff6d8d5fb9f668c7e2b347632",
+      "role": "manager"
+    },
+    {
+      "id": "usr_4",
+      "name": "Marcus Vance",
+      "email": "viewer@thescene.co",
+      "password_hash": "ef92b778bafe771e8929ab57e5377873737ec59ff6d8d5fb9f668c7e2b347632",
+      "role": "viewer"
+    }
+  ],
+  "brands": [
+    {
+      "id": "brd_l1zx1cb",
+      "name": "boobs bar ",
+      "company_name": "test test ",
+      "industry": "sports and bar ",
+      "contact_person": "josh ",
+      "designation": "marketing director ",
+      "email": "test@gmail.com",
+      "phone": "9845714699",
+      "website": "http://thescene.co.in",
+      "budget_range": "₹100,000 - ₹500,000",
+      "address": "bangalore",
+      "notes": "test test "
+    }
+  ],
+  "influencers": [
+    {
+      "id": "inf_xw55dox",
+      "full_name": "Thejaswin P",
+      "username": "the__win25",
+      "email": "thejaswinps@gmail.com",
+      "phone": "9845714699",
+      "dob": null,
+      "gender": null,
+      "bio": "test bio notes",
+      "website": null,
+      "profile_photo": null,
+      "instagram_handle": "test.com",
+      "instagram_url": "https://instagram.com/test.com",
+      "youtube_handle": null,
+      "youtube_url": null,
+      "linkedin_handle": null,
+      "linkedin_url": null,
+      "facebook_handle": null,
+      "facebook_url": null,
+      "twitter_handle": null,
+      "twitter_url": null,
+      "snapchat": null,
+      "moj": null,
+      "josh": null,
+      "sharechat": null,
+      "followers": 1000,
+      "avg_reach": 0,
+      "avg_reel_reach": 0,
+      "avg_story_reach": 0,
+      "avg_post_reach": 0,
+      "avg_views": 0,
+      "avg_likes": 0,
+      "avg_comments": 0,
+      "avg_shares": 0,
+      "avg_saves": 0,
+      "engagement_rate": 1.5,
+      "male_audience_pct": 50,
+      "female_audience_pct": 50,
+      "age_13_17_pct": 10,
+      "age_18_24_pct": 40,
+      "age_25_34_pct": 30,
+      "age_35_44_pct": 15,
+      "age_45_plus_pct": 5,
+      "top_cities": "[]",
+      "top_states": "[]",
+      "top_countries": "[]",
+      "country": null,
+      "state": null,
+      "city": "bangalore",
+      "area": null,
+      "pincode": null,
+      "primary_lang": null,
+      "secondary_langs": "[]",
+      "tier": "Nano",
+      "story_price": 2500,
+      "static_post_price": 0,
+      "carousel_price": 0,
+      "reel_price": 5000,
+      "youtube_integration_price": 0,
+      "event_appearance_price": 0,
+      "ugc_video_price": 0,
+      "collab_preferences": "[]",
+      "availability_status": "Available",
+      "content_quality_rating": 8,
+      "communication_rating": 9,
+      "professionalism_rating": 0,
+      "reliability_rating": 0,
+      "brand_fit_rating": 0,
+      "notes": "Some test agency notes here.",
+      "strengths": null,
+      "weaknesses": null,
+      "preferred_brands": null,
+      "brands_avoided": null,
+      "reach_score": 46,
+      "engagement_score": 23,
+      "content_quality_score": 80,
+      "communication_score": 90,
+      "campaign_performance_score": 50,
+      "overall_score": 58,
+      "overall_grade": "C",
+      "updated_at": "2026-06-18T13:28:02.516Z"
+    }
+  ],
+  "influencer_categories": [
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Beauty"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Food"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
+    }
+  ],
+  "influencer_languages": [
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    }
+  ],
+  "influencer_documents": [],
+  "influencer_lists": [],
+  "influencer_list_members": [],
+  "campaigns": [],
+  "campaign_influencers": [],
+  "payments": [],
+  "activities": [
+    {
+      "id": "act_68p3zn5",
+      "influencer_id": "inf_xw55dox",
+      "type": "note",
+      "content": "Created influencer profile for Thejaswin P.",
+      "created_by": "usr_1"
+    },
+    {
+      "id": "act_35oqp8o",
+      "influencer_id": "inf_xw55dox",
+      "type": "note",
+      "content": "Updated influencer profile details.",
+      "created_by": "usr_1"
+    },
+    {
+      "id": "act_so6a20o",
+      "influencer_id": "inf_xw55dox",
+      "type": "note",
+      "content": "Updated influencer profile details.",
+      "created_by": "usr_1"
+    },
+    {
+      "id": "act_j7qd6w4",
+      "influencer_id": "inf_xw55dox",
+      "type": "note",
+      "content": "Updated influencer profile details.",
+      "created_by": "usr_1"
+    },
+    {
+      "id": "act_d6lcclp",
+      "influencer_id": "inf_xw55dox",
+      "type": "note",
+      "content": "Updated influencer profile details.",
+      "created_by": "usr_1"
+    },
+    {
+      "id": "act_ypcmns6",
+      "brand_id": "brd_l1zx1cb",
+      "type": "note",
+      "content": "Created brand partner profile for boobs bar .",
+      "created_by": "usr_1"
+    },
+    {
+      "id": "act_7pk76ou",
+      "influencer_id": "inf_xw55dox",
+      "type": "note",
+      "content": "Updated influencer profile details.",
+      "created_by": "usr_1"
+    }
+  ],
+  "notes": [],
+  "reports": []
+}
