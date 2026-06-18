@@ -78,7 +78,7 @@
       "moj": null,
       "josh": null,
       "sharechat": null,
-      "followers": 1000,
+      "followers": 15000,
       "avg_reach": 0,
       "avg_reel_reach": 0,
       "avg_story_reach": 0,
@@ -88,7 +88,7 @@
       "avg_comments": 0,
       "avg_shares": 0,
       "avg_saves": 0,
-      "engagement_rate": 1.5,
+      "engagement_rate": 3.2,
       "male_audience_pct": 50,
       "female_audience_pct": 50,
       "age_13_17_pct": 10,
@@ -106,34 +106,34 @@
       "pincode": null,
       "primary_lang": null,
       "secondary_langs": "[]",
-      "tier": "Nano",
-      "story_price": 2500,
+      "tier": "Micro",
+      "story_price": 6000,
       "static_post_price": 0,
       "carousel_price": 0,
-      "reel_price": 5000,
+      "reel_price": 12000,
       "youtube_integration_price": 0,
       "event_appearance_price": 0,
       "ugc_video_price": 0,
       "collab_preferences": "[]",
       "availability_status": "Available",
-      "content_quality_rating": 8,
-      "communication_rating": 9,
+      "content_quality_rating": 9,
+      "communication_rating": 8,
       "professionalism_rating": 0,
       "reliability_rating": 0,
       "brand_fit_rating": 0,
-      "notes": "Some test agency notes here.",
+      "notes": "Great creator, highly responsive!",
       "strengths": null,
       "weaknesses": null,
       "preferred_brands": null,
       "brands_avoided": null,
-      "reach_score": 46,
-      "engagement_score": 23,
-      "content_quality_score": 80,
-      "communication_score": 90,
+      "reach_score": 64,
+      "engagement_score": 48,
+      "content_quality_score": 90,
+      "communication_score": 80,
       "campaign_performance_score": 50,
-      "overall_score": 58,
-      "overall_grade": "C",
-      "updated_at": "2026-06-18T13:28:02.516Z"
+      "overall_score": 66,
+      "overall_grade": "B",
+      "updated_at": "2026-06-18T13:45:11.911Z"
     }
   ],
   "influencer_categories": [
@@ -648,6 +648,14 @@
     {
       "influencer_id": "inf_xw55dox",
       "category": "Lifestyle"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Fashion"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "category": "Lifestyle"
     }
   ],
   "influencer_languages": [
@@ -778,6 +786,14 @@
     {
       "influencer_id": "inf_xw55dox",
       "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "English"
+    },
+    {
+      "influencer_id": "inf_xw55dox",
+      "language": "Kannada"
     }
   ],
   "influencer_documents": [],
@@ -834,6 +850,49 @@
       "influencer_id": "inf_xw55dox",
       "type": "note",
       "content": "Updated influencer profile details.",
+      "created_by": "usr_1"
+    },
+    {
+      "id": "act_rzm7hy1",
+      "influencer_id": "inf_xw55dox",
+      "type": "note",
+      "content": "Updated influencer profile details.",
+      "created_by": "usr_1"
+    },
+    {
+      "id": "act_2vqs29u",
+      "influencer_id": "inf_xw55dox",
+      "brand_id": null,
+      "campaign_id": null,
+      "type": "whatsapp",
+      "content": "WhatsApp outreach sent via \"First Outreach / Pitch\". Preview: Hi Thejaswin P,\n\nLove your content on Instagram! This is Sarah Jenkins from The Scene Co. \n\nWe have an exciting collabor...",
+      "created_by": "usr_1"
+    },
+    {
+      "id": "act_fnycsjj",
+      "influencer_id": "inf_xw55dox",
+      "brand_id": null,
+      "campaign_id": null,
+      "type": "whatsapp",
+      "content": "WhatsApp outreach sent via \"First Outreach / Pitch\". Preview: Hi Thejaswin P,\n\nLove your content on Instagram! This is Sarah Jenkins from The Scene Co. \n\nWe have an exciting collabor...",
+      "created_by": "usr_1"
+    },
+    {
+      "id": "act_arz65in",
+      "influencer_id": "inf_xw55dox",
+      "brand_id": null,
+      "campaign_id": null,
+      "type": "whatsapp",
+      "content": "WhatsApp outreach sent via \"First Outreach / Pitch\". Preview: Hi Thejaswin P,\n\nLove your content on Instagram! This is Sarah Jenkins from The Scene Co. \n\nWe have an exciting collabor...",
+      "created_by": "usr_1"
+    },
+    {
+      "id": "act_ngixdd4",
+      "influencer_id": "inf_xw55dox",
+      "brand_id": null,
+      "campaign_id": null,
+      "type": "whatsapp",
+      "content": "WhatsApp outreach sent via \"First Outreach / Pitch\". Preview: Hi Thejaswin P,\n\nLove your content on Instagram! This is Sarah Jenkins from The Scene Co. \n\nWe have an exciting collabor...",
       "created_by": "usr_1"
     }
   ],

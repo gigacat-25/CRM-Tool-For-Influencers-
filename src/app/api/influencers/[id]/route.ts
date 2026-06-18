@@ -139,15 +139,16 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
       languages // array of strings
     } = body;
 
-    // Check existence
-    const exist = await db.query("SELECT id FROM influencers WHERE id = ?", [id]);
-    if (exist.length === 0) {
+    // Fetch existing record to preserve fields not sent by the edit form
+    const existing = await db.query("SELECT * FROM influencers WHERE id = ? LIMIT 1", [id]);
+    if (existing.length === 0) {
       return NextResponse.json({ error: "Influencer not found" }, { status: 404 });
     }
+    const existingInf = existing[0];
 
     // Recalculate tier
     let autoTier = "Nano";
-    const fCount = Number(followers || 0);
+    const fCount = Number(followers ?? existingInf.followers ?? 0);
     if (fCount >= 1000000) autoTier = "Mega";
     else if (fCount >= 500000) autoTier = "Macro";
     else if (fCount >= 100000) autoTier = "Mid";
@@ -157,12 +158,12 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
     // Recalculate scores
     const rawScoresInput = {
       followers: fCount,
-      engagement_rate: Number(engagement_rate || 0.0),
-      content_quality_rating: Number(content_quality_rating || 0),
-      communication_rating: Number(communication_rating || 0),
-      professionalism_rating: Number(professionalism_rating || 0),
-      reliability_rating: Number(reliability_rating || 0),
-      brand_fit_rating: Number(brand_fit_rating || 0)
+      engagement_rate: Number(engagement_rate ?? existingInf.engagement_rate ?? 0.0),
+      content_quality_rating: Number(content_quality_rating ?? existingInf.content_quality_rating ?? 0),
+      communication_rating: Number(communication_rating ?? existingInf.communication_rating ?? 0),
+      professionalism_rating: Number(professionalism_rating ?? existingInf.professionalism_rating ?? 0),
+      reliability_rating: Number(reliability_rating ?? existingInf.reliability_rating ?? 0),
+      brand_fit_rating: Number(brand_fit_rating ?? existingInf.brand_fit_rating ?? 0)
     };
 
     const scoreCalc = calculateInfluencerScores(rawScoresInput);
@@ -185,19 +186,77 @@ export async function PUT(request: Request, { params }: { params: Promise<{ id: 
         campaign_performance_score = ?, overall_score = ?, overall_grade = ?, updated_at = CURRENT_TIMESTAMP
       WHERE id = ?`,
       [
-        full_name, email || null, phone || null, dob || null, gender || null, bio || null, website || null, profile_photo || null,
-        instagram_handle || null, instagram_url || null, youtube_handle || null, youtube_url || null, linkedin_handle || null, linkedin_url || null,
-        facebook_handle || null, facebook_url || null, twitter_handle || null, twitter_url || null, snapchat || null, moj || null, josh || null, sharechat || null,
-        fCount, Number(avg_reach || 0), Number(avg_reel_reach || 0), Number(avg_story_reach || 0), Number(avg_post_reach || 0), Number(avg_views || 0),
-        Number(avg_likes || 0), Number(avg_comments || 0), Number(avg_shares || 0), Number(avg_saves || 0), Number(engagement_rate || 0.0),
-        Number(male_audience_pct || 50.0), Number(female_audience_pct || 50.0), Number(age_13_17_pct || 10.0), Number(age_18_24_pct || 40.0),
-        Number(age_25_34_pct || 30.0), Number(age_35_44_pct || 15.0), Number(age_45_plus_pct || 5.0),
-        top_cities || JSON.stringify([]), top_states || JSON.stringify([]), top_countries || JSON.stringify([]),
-        country || null, state || null, city || null, area || null, pincode || null, primary_lang || null, secondary_langs || JSON.stringify([]),
-        autoTier, Number(story_price || 0), Number(static_post_price || 0), Number(carousel_price || 0), Number(reel_price || 0), Number(youtube_integration_price || 0),
-        Number(event_appearance_price || 0), Number(ugc_video_price || 0), collab_preferences || JSON.stringify([]), availability_status || "Available",
-        Number(content_quality_rating || 0), Number(communication_rating || 0), Number(professionalism_rating || 0), Number(reliability_rating || 0),
-        Number(brand_fit_rating || 0), notes || null, strengths || null, weaknesses || null, preferred_brands || null, brands_avoided || null,
+        full_name || existingInf.full_name,
+        email !== undefined ? (email || null) : existingInf.email,
+        phone !== undefined ? (phone || null) : existingInf.phone,
+        dob !== undefined ? (dob || null) : existingInf.dob,
+        gender !== undefined ? (gender || null) : existingInf.gender,
+        bio !== undefined ? (bio || null) : existingInf.bio,
+        website !== undefined ? (website || null) : existingInf.website,
+        // Preserve existing profile_photo if not explicitly provided
+        profile_photo !== undefined ? (profile_photo || existingInf.profile_photo) : existingInf.profile_photo,
+        instagram_handle !== undefined ? (instagram_handle || null) : existingInf.instagram_handle,
+        instagram_url !== undefined ? (instagram_url || null) : existingInf.instagram_url,
+        youtube_handle !== undefined ? (youtube_handle || null) : existingInf.youtube_handle,
+        youtube_url !== undefined ? (youtube_url || null) : existingInf.youtube_url,
+        linkedin_handle !== undefined ? (linkedin_handle || null) : existingInf.linkedin_handle,
+        linkedin_url !== undefined ? (linkedin_url || null) : existingInf.linkedin_url,
+        facebook_handle !== undefined ? (facebook_handle || null) : existingInf.facebook_handle,
+        facebook_url !== undefined ? (facebook_url || null) : existingInf.facebook_url,
+        twitter_handle !== undefined ? (twitter_handle || null) : existingInf.twitter_handle,
+        twitter_url !== undefined ? (twitter_url || null) : existingInf.twitter_url,
+        snapchat !== undefined ? (snapchat || null) : existingInf.snapchat,
+        moj !== undefined ? (moj || null) : existingInf.moj,
+        josh !== undefined ? (josh || null) : existingInf.josh,
+        sharechat !== undefined ? (sharechat || null) : existingInf.sharechat,
+        fCount,
+        Number(avg_reach ?? existingInf.avg_reach ?? 0),
+        Number(avg_reel_reach ?? existingInf.avg_reel_reach ?? 0),
+        Number(avg_story_reach ?? existingInf.avg_story_reach ?? 0),
+        Number(avg_post_reach ?? existingInf.avg_post_reach ?? 0),
+        Number(avg_views ?? existingInf.avg_views ?? 0),
+        Number(avg_likes ?? existingInf.avg_likes ?? 0),
+        Number(avg_comments ?? existingInf.avg_comments ?? 0),
+        Number(avg_shares ?? existingInf.avg_shares ?? 0),
+        Number(avg_saves ?? existingInf.avg_saves ?? 0),
+        Number(engagement_rate ?? existingInf.engagement_rate ?? 0.0),
+        Number(male_audience_pct ?? existingInf.male_audience_pct ?? 50.0),
+        Number(female_audience_pct ?? existingInf.female_audience_pct ?? 50.0),
+        Number(age_13_17_pct ?? existingInf.age_13_17_pct ?? 10.0),
+        Number(age_18_24_pct ?? existingInf.age_18_24_pct ?? 40.0),
+        Number(age_25_34_pct ?? existingInf.age_25_34_pct ?? 30.0),
+        Number(age_35_44_pct ?? existingInf.age_35_44_pct ?? 15.0),
+        Number(age_45_plus_pct ?? existingInf.age_45_plus_pct ?? 5.0),
+        top_cities !== undefined ? (top_cities || JSON.stringify([])) : existingInf.top_cities,
+        top_states !== undefined ? (top_states || JSON.stringify([])) : existingInf.top_states,
+        top_countries !== undefined ? (top_countries || JSON.stringify([])) : existingInf.top_countries,
+        country !== undefined ? (country || null) : existingInf.country,
+        state !== undefined ? (state || null) : existingInf.state,
+        city !== undefined ? (city || null) : existingInf.city,
+        area !== undefined ? (area || null) : existingInf.area,
+        pincode !== undefined ? (pincode || null) : existingInf.pincode,
+        primary_lang !== undefined ? (primary_lang || null) : existingInf.primary_lang,
+        secondary_langs !== undefined ? (secondary_langs || JSON.stringify([])) : existingInf.secondary_langs,
+        autoTier,
+        Number(story_price ?? existingInf.story_price ?? 0),
+        Number(static_post_price ?? existingInf.static_post_price ?? 0),
+        Number(carousel_price ?? existingInf.carousel_price ?? 0),
+        Number(reel_price ?? existingInf.reel_price ?? 0),
+        Number(youtube_integration_price ?? existingInf.youtube_integration_price ?? 0),
+        Number(event_appearance_price ?? existingInf.event_appearance_price ?? 0),
+        Number(ugc_video_price ?? existingInf.ugc_video_price ?? 0),
+        collab_preferences !== undefined ? (collab_preferences || JSON.stringify([])) : existingInf.collab_preferences,
+        availability_status || existingInf.availability_status || "Available",
+        Number(content_quality_rating ?? existingInf.content_quality_rating ?? 0),
+        Number(communication_rating ?? existingInf.communication_rating ?? 0),
+        Number(professionalism_rating ?? existingInf.professionalism_rating ?? 0),
+        Number(reliability_rating ?? existingInf.reliability_rating ?? 0),
+        Number(brand_fit_rating ?? existingInf.brand_fit_rating ?? 0),
+        notes !== undefined ? (notes || null) : existingInf.notes,
+        strengths !== undefined ? (strengths || null) : existingInf.strengths,
+        weaknesses !== undefined ? (weaknesses || null) : existingInf.weaknesses,
+        preferred_brands !== undefined ? (preferred_brands || null) : existingInf.preferred_brands,
+        brands_avoided !== undefined ? (brands_avoided || null) : existingInf.brands_avoided,
         scoreCalc.reach_score, scoreCalc.engagement_score, scoreCalc.content_quality_score, scoreCalc.communication_score,
         scoreCalc.campaign_performance_score, scoreCalc.overall_score, scoreCalc.overall_grade,
         id

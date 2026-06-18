@@ -989,7 +989,7 @@ export default function InfluencersPage() {
                         </td>
                         <td className="p-3 flex items-center gap-3">
                           <img
-                            src={inf.profile_photo}
+                            src={inf.profile_photo || `https://ui-avatars.com/api/?name=${encodeURIComponent(inf.full_name)}&background=6366f1&color=fff&size=96`}
                             alt={inf.full_name}
                             className="h-9 w-9 rounded-full object-cover border border-border shrink-0"
                           />
@@ -1013,7 +1013,7 @@ export default function InfluencersPage() {
                         <td className="p-3 font-bold">{formatNumber(inf.followers)}</td>
                         <td className="p-3 font-semibold text-emerald-500">{inf.engagement_rate}%</td>
                         <td className="p-3 text-zinc-500">{inf.city || "N/A"}</td>
-                        <td className="p-3 font-bold">{inf.reel_price ? formatCurrency(inf.reel_price) : "Barter"}</td>
+                        <td className="p-3 font-bold">{inf.reel_price > 0 ? formatCurrency(inf.reel_price) : "Barter"}</td>
                         <td className="p-3">
                           <span className={`px-2 py-0.5 rounded-lg text-[9px] font-extrabold uppercase tracking-wide inline-block ${
                             inf.availability_status === "Available"
@@ -1195,11 +1195,11 @@ export default function InfluencersPage() {
                       <div className="grid grid-cols-2 gap-2 text-[11px] pt-2 border-t border-border">
                         <div>
                           <span className="text-[10px] text-zinc-400 block font-bold">Reel Rate</span>
-                          <span className="font-bold">{inf.reel_price ? formatCurrency(inf.reel_price) : "Barter"}</span>
+                          <span className="font-bold">{inf.reel_price > 0 ? formatCurrency(inf.reel_price) : "Barter"}</span>
                         </div>
                         <div>
                           <span className="text-[10px] text-zinc-400 block font-bold">Story Rate</span>
-                          <span className="font-bold">{inf.story_price ? formatCurrency(inf.story_price) : "Barter"}</span>
+                          <span className="font-bold">{inf.story_price > 0 ? formatCurrency(inf.story_price) : "Barter"}</span>
                         </div>
                       </div>
 

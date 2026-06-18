@@ -519,27 +519,27 @@ export default function InfluencerDetailPage({ params }: PageProps) {
               <div className="divide-y divide-border/60 text-xs font-semibold">
                 <div className="flex justify-between py-2.5">
                   <span className="text-zinc-400">Instagram Reel Rate</span>
-                  <span className="font-bold">{influencer.reel_price ? formatCurrency(influencer.reel_price) : "Barter"}</span>
+                  <span className="font-bold">{influencer.reel_price > 0 ? formatCurrency(influencer.reel_price) : "Barter"}</span>
                 </div>
                 <div className="flex justify-between py-2.5">
                   <span className="text-zinc-400">Instagram Story Rate</span>
-                  <span className="font-bold">{influencer.story_price ? formatCurrency(influencer.story_price) : "Barter"}</span>
+                  <span className="font-bold">{influencer.story_price > 0 ? formatCurrency(influencer.story_price) : "Barter"}</span>
                 </div>
                 <div className="flex justify-between py-2.5">
                   <span className="text-zinc-400">Static Post Rate</span>
-                  <span className="font-bold">{influencer.static_post_price ? formatCurrency(influencer.static_post_price) : "Barter"}</span>
+                  <span className="font-bold">{influencer.static_post_price > 0 ? formatCurrency(influencer.static_post_price) : "Barter"}</span>
                 </div>
                 <div className="flex justify-between py-2.5">
                   <span className="text-zinc-400">Carousel Rate</span>
-                  <span className="font-bold">{influencer.carousel_price ? formatCurrency(influencer.carousel_price) : "Barter"}</span>
+                  <span className="font-bold">{influencer.carousel_price > 0 ? formatCurrency(influencer.carousel_price) : "Barter"}</span>
                 </div>
                 <div className="flex justify-between py-2.5">
                   <span className="text-zinc-400">YouTube Video Rate</span>
-                  <span className="font-bold">{influencer.youtube_integration_price ? formatCurrency(influencer.youtube_integration_price) : "N/A"}</span>
+                  <span className="font-bold">{influencer.youtube_integration_price > 0 ? formatCurrency(influencer.youtube_integration_price) : "N/A"}</span>
                 </div>
                 <div className="flex justify-between py-2.5">
                   <span className="text-zinc-400">UGC Video Price</span>
-                  <span className="font-bold">{influencer.ugc_video_price ? formatCurrency(influencer.ugc_video_price) : "Barter"}</span>
+                  <span className="font-bold">{influencer.ugc_video_price > 0 ? formatCurrency(influencer.ugc_video_price) : "Barter"}</span>
                 </div>
               </div>
             </div>
